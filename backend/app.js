@@ -10,6 +10,19 @@ const auth = require('./auth')
 // body parser configuration
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
+// For CORS problems.
+app.use((req, res, next) => {
+  res.setHeader('Access-Control-Allow-Origin', '*')
+  res.setHeader(
+    'Access-Control-Allow-Headers',
+    'Origin, X-Requested-With, Content, Accept, Content-Type, Authorization'
+  )
+  res.setHeader(
+    'Access-Control-Allow-Methods',
+    'GET, POST, PUT, DELETE, PATCH, OPTIONS'
+  )
+  next()
+})
 
 // app.get('/', (request, response, next) => {
 //   response.json({ message: 'Hey! This is your server response!' })
@@ -101,16 +114,3 @@ app.get('/auth-endpoint', auth, (request, response) => {
 module.exports = app
 
 dbConnect()
-
-app.use((req, res, next) => {
-  res.setHeader('Access-Control-Allow-Origin', '*')
-  res.setHeader(
-    'Access-Control-Allow-Headers',
-    'Origin, X-Requested-With, Content, Accept, Content-Type, Authorization'
-  )
-  res.setHeader(
-    'Access-Control-Allow-Methods',
-    'GET, POST, PUT, DELETE, PATCH, OPTIONS'
-  )
-  next()
-})
