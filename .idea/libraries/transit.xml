@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="transit">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/rennes.gtfs.zip!/" />
+      <root url="jar://$PROJECT_DIR$/otp-2.1.0-shaded.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
