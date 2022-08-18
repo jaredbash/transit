@@ -10,4 +10,4 @@ Frontend authenticification client with react-bootstrap.
 
 ## To Do
 
-Start building the frontend for trip planning, choose how mapping will be handled, etc.
+Start building the frontend for trip planning, choose how mapping will be handled, etc. This will be done with Open Trip Planner for trip decision making.
