@@ -4,9 +4,9 @@ A project meant to replace the Rennes STAR Application, using Open Trip Planner 
 
 ## Currently Completed:
 
-Backend Authentification API with MongoDB, Mongoose, and Express.
+- [x] Backend Authentification API with MongoDB, Mongoose, and Express.
 
-Frontend authenticification client with react-bootstrap.
+- [x] Frontend authenticification client with react-bootstrap.
 
 ## To Do
 
