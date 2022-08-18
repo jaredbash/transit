@@ -2,7 +2,7 @@
 
 A project meant to replace the Rennes STAR Application, using Open Trip Planner to plan trips with Rennes Metropole Open Data API.
 
-## Currently Completed:
+## Completed
 
 - [x] Backend Authentification API with MongoDB, Mongoose, and Express.
 
